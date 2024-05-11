@@ -11,3 +11,6 @@ resource "aws_instance" "expense" {
       }
     )
 }
+
+# Use count --> (List) when using count
+# Use for --> (Maps) when using for

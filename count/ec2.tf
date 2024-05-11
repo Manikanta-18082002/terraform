@@ -1,6 +1,6 @@
 resource "aws_instance" "db" {
     #count = 3
-    count = length(var.instance_name)
+    count = length(var.instance_name)  #length is a built in function
     ami = "ami-090252cbe067a9e58" 
     instance_type = "t3.micro"
 

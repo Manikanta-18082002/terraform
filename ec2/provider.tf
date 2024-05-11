@@ -10,6 +10,6 @@ terraform {
 #Provide Authentication here
 provider "aws" {
     region = "us-east-1"
-  # Don't keep both keys here (If we push into github Our AWS Account will be hacked)
+  # Don't keep both keys (Access-Key & Secrete Key) here (If we push into github Our AWS Account will be hacked)
   
 }

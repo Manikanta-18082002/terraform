@@ -12,7 +12,7 @@ resource "aws_security_group" "allow_ports" {
             cidr_blocks      = ingress.value["allowed_cidr"]
         }
     }
-
+    
     egress {
         from_port        = 0 # from 0 to 0 means, opening all protocols
         to_port          = 0

@@ -1,15 +1,15 @@
 variable "image_id" { 
-    type = string # Give this to enter only string to debug easy (If any one entered int)
+    type = string 
     default = "ami-090252cbe067a9e58"
     description = "RHEL-9 AMI ID" #Optional
 }
 
 variable "instance_type" {
-    type = string
+    type = string # Give this to enter only string to debug easy (If any one entered int)
     default = "t2.micro"
 }
 
-variable "tags" {
+variable "tags" { #Tags are useful: for future reference to get full info, taging strategy
     default = {
         Project = "Expense"
         Environment = "DEV"

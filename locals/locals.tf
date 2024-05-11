@@ -8,3 +8,5 @@ locals {
     Name = "locals"
   }
 }
+
+#Ex: Line 5: We can use variables inside locals. But not variables/locals inside variables.

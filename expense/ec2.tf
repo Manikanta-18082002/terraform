@@ -4,7 +4,7 @@ resource "aws_instance" "expense" {
     vpc_security_group_ids = [aws_security_group.allow_ssh.id] #Type: List
     instance_type = var.instance_names[count.index] == "db" ? "t3.small" : "t3.micro"
 
-    tags = merge(
+    tags = merge( #It takes 2nd value if both values are same
       var.common_tags,
       {
         Name = var.instance_names[count.index]

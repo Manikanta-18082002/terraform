@@ -10,10 +10,12 @@ terraform {
     bucket = "mani-remote-state"
     key = "any-key" #Put any key here
     region = "us-east-1"
-    dynamodb_table = "remote-state-locking"
+    dynamodb_table = "remote-state-locking" #To enable the Dynamo DB
     
   }
 }
+#Remote state in --> S3
+#Locking in --> Dynamo DB
 
 #Provide Authentication here
 provider "aws" {

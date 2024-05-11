@@ -30,7 +30,7 @@ Preference for Variables:
 
 Terraform Functions: https://developer.hashicorp.com/terraform/language/functions
 
-$ terraform console
+$ terraform console #Type in gitbash path
 > max(12,34,21)
 > max(12,34,21)
 34
